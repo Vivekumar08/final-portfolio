@@ -1,0 +1,288 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.frame {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+}
+.frame-12 {
+    /* width: 60%; */
+    height: 50px;
+    margin: 8px 2px;
+    text-align: center;
+}
+
+.custom-btn {
+    /* width: 130px; */
+    height: 50px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+      7px 7px 20px 0px rgba(0, 0, 0, .1),
+      4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+  }
+
+.btn-3 {
+    background: radial-gradient(circle at 0.1% 99.8%, rgb(0, 164, 189) 0%, rgb(0, 189, 165) 90%);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    width: 100%;
+    height: 100%;
+
+}
+
+.btn-3 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 3px 25px;
+}
+
+.btn-3:before,
+.btn-3:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    background: #2ca0a8;
+    top: 0;
+    /* background: rgb(8, 188, 216); */
+    transition: all 0.3s ease;
+}
+
+.btn-3:before {
+    height: 0%;
+    width: 2px;
+}
+
+.btn-3:after {
+    width: 0%;
+    height: 3px;
+}
+
+.btn-3:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.btn-3:hover:before {
+    height: 100%;
+}
+
+.btn-3:hover:after {
+    width: 100%;
+}
+
+/* .btn-3 span:hover {
+    color: rgba(2, 126, 251, 1);
+  }
+   */
+.btn-3 span:before,
+.btn-3 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: rgb(8, 188, 216);
+    /* background: #227980; */
+    transition: all 0.3s ease;
+}
+
+.btn-3 span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.btn-3 span:after {
+    width: 0%;
+    height: 2px;
+}
+
+.btn-3 span:hover:before {
+    height: 100%;
+}
+
+.btn-3 span:hover:after {
+    width: 100%;
+}
+
+/*btn-7*/
+.btn-7 {
+  background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+    /* background: linear-gradient(0deg, rgb(0, 164, 189) 0%, rgb(0, 189, 165) 100%); */
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .btn-7 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+  
+  .btn-7:before,
+  .btn-7:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: rgb(63, 76, 119);
+    box-shadow:
+      -7px -7px 20px 0px rgba(255, 255, 255, .9),
+      -4px -4px 5px 0px rgba(255, 255, 255, .9),
+      7px 7px 20px 0px rgba(0, 0, 0, .2),
+      4px 4px 5px 0px rgba(0, 0, 0, .3);
+    transition: all 0.3s ease;
+  }
+  
+  .btn-7:before {
+    height: 0%;
+    width: 2px;
+  }
+  
+  .btn-7:after {
+    width: 0%;
+    height: 2px;
+  }
+  
+  .btn-7:hover {
+    /* color: rgba(251, 75, 2, 1); */
+    background: linear-gradient(250.4deg, rgb(20, 30, 48) 11.2%, rgb(36, 59, 85) 91.1%);
+    /* background: linear-gradient(225deg, rgb(0, 164, 189) 0%, rgb(0, 189, 165) 100%); */
+
+  }
+  
+  
+  .btn-7:hover:before {
+    height: 100%;
+  }
+  
+  .btn-7:hover:after {
+    width: 100%;
+  }
+  
+  .btn-7 span:before,
+  .btn-7 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: rgb(36, 59, 85);
+    box-shadow:
+      -7px -7px 20px 0px rgba(255, 255, 255, .9),
+      -4px -4px 5px 0px rgba(255, 255, 255, .9),
+      7px 7px 20px 0px rgba(0, 0, 0, .2),
+      4px 4px 5px 0px rgba(0, 0, 0, .3);
+    transition: all 0.3s ease;
+  }
+  
+  .btn-7 span:before {
+    width: 2px;
+    height: 0%;
+  }
+  
+  .btn-7 span:after {
+    height: 2px;
+    width: 0%;
+  }
+  
+  .btn-7 span:hover:before {
+    height: 100%;
+  }
+  
+  .btn-7 span:hover:after {
+    width: 100%;
+  }
+  
+  /* 12 */
+.btn-12 {
+  position: relative;
+  right: 8px;
+  bottom: 10px;
+  border: none;
+  box-shadow: none;
+  width: 120px;
+  height: 50px;
+  line-height: 42px;
+  -webkit-perspective: 230px;
+  perspective: 230px;
+}
+
+.btn-12 span {
+  background: rgb(0, 172, 238);
+  background: linear-gradient(0deg, rgb(0, 164, 189) 0%, rgb(0, 189, 165) 100%);
+    /* background: linear-gradient(0deg, rgba(0, 172, 238, 1) 0%, rgba(2, 126, 251, 1) 100%); */
+  display: block;
+  position: absolute;
+  width: 120px;
+  height: 40px;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+    7px 7px 20px 0px rgba(0, 0, 0, .1),
+    4px 4px 5px 0px rgba(0, 0, 0, .1);
+  border-radius: 5px;
+  margin: 0;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.btn-12 span:nth-child(1) {
+  box-shadow:
+    -7px -7px 20px 0px #fff9,
+    -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002,
+    4px 4px 5px 0px #0001;
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+
+.btn-12 span:nth-child(2) {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+
+.btn-12:hover span:nth-child(1) {
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+    7px 7px 20px 0px rgba(0, 0, 0, .1),
+    4px 4px 5px 0px rgba(0, 0, 0, .1);
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+
+.btn-12:hover span:nth-child(2) {
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+    7px 7px 20px 0px rgba(0, 0, 0, .1),
+    4px 4px 5px 0px rgba(0, 0, 0, .1);
+  color: transparent;
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+}
