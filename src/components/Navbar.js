@@ -29,7 +29,7 @@ const Navbar = () => {
                 <CustomLink href={"/"} title={"Home"} className='mr-2' />
                 <CustomLink href={"/about"} title={"About"} className='mx-2' />
                 <CustomLink href={"/experience"} title={"Experience"} className='mx-2' />
-                <CustomLink href={"/projects"} title={"projects"} className='ml-2' />
+                <CustomLink href={"/projects"} title={"projects"} className='mx-2' />
                 <CustomLink href={"/contact"} title={"Contact"} className='mx-2' />
                 <button onClick={() => setMode(mode === "light" ? "dark" : "light")}
                     className={`ml-3 flex items-center justify-center rounded-full p-1 ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}`}

@@ -6,7 +6,7 @@ const Buttons = (props) => {
     if (props.href) {
         return (
             <div className={styles.frame}>
-                <a href={props.href} className={styles[custom-btn, btn-3]}>
+                <a href={props.href} className={"custom-btn btn-3"}>
                     <span>{props.title}</span>
                 </a>
             </div>
@@ -15,7 +15,7 @@ const Buttons = (props) => {
     if (props.to) {
         return (
             <div className={styles.frame}>
-                <Link href={props.to} className={styles[custom-btn, btn-3]}>
+                <Link href={props.to} className={"custom-btn btn-3"}>
                     <span>{props.title}</span>
                 </Link>
             </div>
@@ -27,7 +27,7 @@ const Buttons = (props) => {
                 type={props.type}
                 onClick={props.onClick}
                 disabled={props.disabled}
-                className={styles[custom-btn, btn-3]}
+                className={"custom-btn btn-3"}
             >
                 <span>{props.title}</span>
             </button>
