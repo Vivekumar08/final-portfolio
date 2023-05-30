@@ -1,15 +1,18 @@
 import { faLocation, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import * as emailjs from 'emailjs-com'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import Buttons from '@/components/Button';
 import Head from 'next/head';
 import Layout from '@/components/Layout';
 import { motion } from "framer-motion";
-import { slideIn, staggerContainer, textVariant } from '../../utils/motion';
+import { staggerContainer, textVariant } from '../../utils/motion';
+import { useRouter } from 'next/router';
 
 const Contact = () => {
+    const router = useRouter()
+
     const [formData, setFormdata] = useState({
         email: "",
         name: "",
@@ -48,17 +51,16 @@ const Contact = () => {
                         show: true,
                         sent: true,
                     });
-                    window.alert(formData.alertmessage);
+                    window.alert("SUCCESS! ,Thank you for your messege");
                 },
                 (error) => {
-                    console.log(error.text);
                     setFormdata({
                         loading: false,
                         alertmessage: `Faild to send!,${error.text}`,
                         variant: "danger",
                         show: true,
                     });
-                    window.alert({ message: formData.alertmessage });
+                    window.alert(`Faild to send!,${error.text}`);
                 }
             );
     };
@@ -69,6 +71,7 @@ const Contact = () => {
             [e.target.name]: e.target.value,
         });
     };
+
     return (<>
         <Head>
             <title>Vivek Kumar | Contact Me</title>
@@ -76,12 +79,12 @@ const Contact = () => {
         </Head>
         <section className="min-h-screen font-mont dark:bg-dark dark:text-light">
             <Layout className='lg:pt-2 pt-2'>
-                <div className="grid max-w-6xl lg:grid-cols-1 lg:px-6 mx-auto px-8 grid-cols-2 divide-x-2 lg:divide-y-2 lg:divide-x-0">
+                <div className="grid max-w-6xl lg:divide-y-2 mb-12 lg:grid-cols-1 lg:px-6 mx-auto px-8 grid-cols-2 divide-x-2  lg:py-12  lg:divide-x-0">
                     <motion.div variants={staggerContainer}
                         initial="hidden"
                         whileInView="show"
-                        viewport={{ once: true, amount: 0.25 }} className="lg:py-2 py-0 px-6">
-                        <motion.h1 variants={slideIn('right','spring',1,1)} className="text-6xl font-bold">Get in touch</motion.h1>
+                        viewport={{ once: true, amount: 0.25 }} className="lg:py-2 py-0 px-6 ">
+                        <motion.h1 variants={textVariant(1.1)} className="text-6xl font-bold">Get in touch</motion.h1>
                         <p className="pt-2 pb-4 text-justify">
                             Whether you want to get in touch, talk about a project
                             collaboration, or just say hi, I d love to hear from you. Simply
