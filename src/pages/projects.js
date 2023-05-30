@@ -200,12 +200,10 @@ const Projects = () => {
                 tech={[
                   "HTML",
                   "CSS",
-                  "Tailwind",
-                  "Rdeux",
+                  "Tailwind CSS",
+                  "Redux",
                   "Reactjs",
-                  "MongoDB",
-                  "NodeJs",
-                  "ExpressJs",
+                  "Framer Motion",
                 ]}
                 img={convoke}
                 github={"https://github.com/Vivekumar08/"}
@@ -242,11 +240,9 @@ const Projects = () => {
                   "HTML",
                   "CSS",
                   "Tailwind",
-                  "Rdeux",
+                  "Redux",
                   "Reactjs",
-                  "MongoDB",
-                  "NodeJs",
-                  "ExpressJs",
+                  "Framer Motion",
                 ]}
                 img={conference}
                 github={"https://github.com/Vivekumar08/"}
@@ -315,7 +311,7 @@ const Projects = () => {
                   "Embark on a visually stunning journey through the realm of Computer Graphics with my collection of programs created using OpenGL and Tkinter. Witness extraordinary results as you explore programs like Bresenham Line and Ellipse Drawing, showcasing the power and creativity of these technologies. Experience the magic of transforming algorithms into captivating visuals, and unleash your imagination in this captivating world of Computer Graphics."
                 }
                 tech={[
-                  "Python","Matplotlib","OpenGL","numpy","pandas"
+                  "Python","Matplotlib","OpenGL","numpy","pandas","GUI",
                 ]}
                 img={cg}
                 github={"https://github.com/Vivekumar08/"}
@@ -328,14 +324,10 @@ const Projects = () => {
                   "Immerse yourself in a stellar experience as you test your knowledge about planets, celestial bodies, and space exploration. Engage in an interactive interface that presents intriguing questions and multiple-choice options, providing an entertaining and educational journey through the cosmos. Challenge yourself or compete with friends to achieve the highest score and become a true space aficionado. Expand your horizons and embark on an exciting adventure into the wonders of the Solar System and Space."
                 }
                 tech={[
-                  "HTML",
-                  "CSS",
-                  "Tailwind",
-                  "Rdeux",
-                  "Reactjs",
-                  "MongoDB",
-                  "NodeJs",
-                  "ExpressJs",
+                  "python",
+                  "GUI",
+                  "Tkinter",
+                  "Pandas",
                 ]}
                 img={quiz}
                 github={"https://github.com/Vivekumar08/"}
@@ -348,14 +340,10 @@ const Projects = () => {
                   "This custom-built application takes long and complex URLs and generates shortened, easy-to-share links. With its intuitive interface, users can quickly input their desired URL and obtain a shortened version in just a few clicks. This efficient solution enhances convenience and promotes effective link sharing across various platforms, making it an essential tool for optimizing online communication and improving user experience."
                 }
                 tech={[
-                  "HTML",
-                  "CSS",
-                  "Tailwind",
-                  "Rdeux",
-                  "Reactjs",
-                  "MongoDB",
-                  "NodeJs",
-                  "ExpressJs",
+                  "Python",
+                  "API",
+                  "Tkinter",
+                  "GUI",
                 ]}
                 img={url_shortner}
                 github={"https://github.com/Vivekumar08/"}

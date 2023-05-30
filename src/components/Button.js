@@ -41,8 +41,8 @@ export const Buttons7 = (props) => {
         return (
             <div className={"frame "}>
                 <Link href={props.href} className={"custom-btn btn-7 "} target="_blank">
-                    <span className="flex items-center w-full">{props.title}&nbsp; <FontAwesomeIcon icon={faUpRightFromSquare} className="w-[18px] h-[18px]"/></span>
-
+                    <span className="w-full flex flex-row items-center px-2 ">{props.title}&nbsp;<FontAwesomeIcon icon={faUpRightFromSquare} className="w-[18px] h-[18px] mx-2"/> </span>
+                    
                 </Link>
             </div>
         );

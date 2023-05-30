@@ -1,6 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 .frame {
   /* width: 90%; */
@@ -420,3 +417,7 @@
     height: 32px;
   }
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
