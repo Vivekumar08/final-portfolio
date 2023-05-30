@@ -4,7 +4,6 @@ import Image from 'next/image'
 import { motion } from 'framer-motion';
 import profilePic from "../../public/images/Vivek.png";
 import TypewriterComponent from 'typewriter-effect'
-import { introdata } from './utils/Content'
 import { Buttons7 } from '@/components/Button'
 import { staggerContainer, textVariant } from '../../utils/motion';
 
