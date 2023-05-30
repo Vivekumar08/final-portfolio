@@ -3,85 +3,96 @@
 @tailwind utilities;
 
 .frame {
-    width: 90%;
-    margin: 40px auto;
-    text-align: center;
+  /* width: 90%; */
+  width: 130px;
+  height: 50px;
+  margin: 8px 2px;
+  text-align: center;
 }
+
 .frame-12 {
-    /* width: 60%; */
-    height: 50px;
-    margin: 8px 2px;
-    text-align: center;
+  /* width: 60%; */
+  height: 50px;
+  margin: 8px 2px;
+  text-align: center;
 }
 
 .custom-btn {
-    /* width: 130px; */
-    height: 50px;
-    color: #fff;
-    border-radius: 5px;
-    padding: 10px 25px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 500;
-    background: transparent;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
-      7px 7px 20px 0px rgba(0, 0, 0, .1),
-      4px 4px 5px 0px rgba(0, 0, 0, .1);
-    outline: none;
-  }
+  /* width: 130px; */
+  height: 50px;
+  /* color: #fff; */
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+    7px 7px 20px 0px rgba(0, 0, 0, .1),
+    4px 4px 5px 0px rgba(0, 0, 0, .1);
+  outline: none;
+}
 
 .btn-3 {
-    background: linear-gradient(250.4deg, rgb(20, 30, 48) 11.2%, rgb(36, 59, 85) 91.1%);
-    line-height: 42px;
-    padding: 0;
-    border: none;
-    width: 100%;
-    height: 100%;
+  background: linear-gradient(112.1deg, #1F2639 11.4%, #1F2639 50%, #2D3748 70.2%);
+  color:white;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+.dark .btn-3 {
+  background: linear-gradient(112.1deg, #F7FAFC 11.4%, #EDF2F7 50%, #E2E8F0 70.2%);
+  color: black;
 }
 
 .btn-3 span {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100%;
-    padding: 3px 25px;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 3px 25px;
 }
 
 .btn-3:before,
 .btn-3:after {
-    position: absolute;
-    content: "";
-    right: 0;
-    background: rgb(20, 30, 48);
-    top: 0;
-    transition: all 0.3s ease;
+  position: absolute;
+  content: "";
+  right: 0;
+  background: rgb(20, 30, 48);
+  top: 0;
+  transition: all 0.3s ease;
 }
 
 .btn-3:before {
-    height: 0%;
-    width: 2px;
+  height: 0%;
+  width: 2px;
 }
 
 .btn-3:after {
-    width: 0%;
-    height: 3px;
+  width: 0%;
+  height: 3px;
 }
 
 .btn-3:hover {
-    background: transparent;
-    box-shadow: none;
-    color: rgb(36, 59, 85);
+  background: transparent;
+  box-shadow: none;
+  color: rgb(36, 59, 85);
+}
+.dark .btn-3:hover{
+  color:white;
 }
 
 .btn-3:hover:before {
-    height: 100%;
+  height: 100%;
 }
 
 .btn-3:hover:after {
-    width: 100%;
+  width: 100%;
 }
 
 /* .btn-3 span:hover {
@@ -90,126 +101,136 @@
    */
 .btn-3 span:before,
 .btn-3 span:after {
-    position: absolute;
-    content: "";
-    left: 0;
-    bottom: 0;
-    /* background: rgb(36, 59, 85); */
-    background: #227980;
-    transition: all 0.3s ease;
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  /* background: rgb(36, 59, 85); */
+  background: #227980;
+  transition: all 0.3s ease;
 }
 
 .btn-3 span:before {
-    width: 2px;
-    height: 0%;
+  width: 2px;
+  height: 0%;
 }
 
 .btn-3 span:after {
-    width: 0%;
-    height: 2px;
+  width: 0%;
+  height: 2px;
 }
 
 .btn-3 span:hover:before {
-    height: 100%;
+  height: 100%;
 }
 
 .btn-3 span:hover:after {
-    width: 100%;
+  width: 100%;
 }
 
 /*btn-7*/
 .btn-7 {
-  background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
-    /* background: linear-gradient(0deg, rgb(0, 164, 189) 0%, rgb(0, 189, 165) 100%); */
-    line-height: 42px;
-    padding: 0;
-    border: none;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .btn-7 span {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100%;
+  background: linear-gradient(112.1deg, #1F2639 11.4%, #1F2639 50%, #2D3748 70.2%);
+  /* background: linear-gradient(0deg, rgb(0, 164, 189) 0%, rgb(0, 189, 165) 100%); */
+  line-height: 42px;
+  color: white;
+  padding: 6px;
+  border: none;
+  width: 100%;
+  height: 100%;
 }
-  
-  .btn-7:before,
-  .btn-7:after {
-    position: absolute;
-    content: "";
-    right: 0;
-    bottom: 0;
-    background: rgb(63, 76, 119);
-    box-shadow:
-      -7px -7px 20px 0px rgba(255, 255, 255, .9),
-      -4px -4px 5px 0px rgba(255, 255, 255, .9),
-      7px 7px 20px 0px rgba(0, 0, 0, .2),
-      4px 4px 5px 0px rgba(0, 0, 0, .3);
-    transition: all 0.3s ease;
-  }
-  
-  .btn-7:before {
-    height: 0%;
-    width: 2px;
-  }
-  
-  .btn-7:after {
-    width: 0%;
-    height: 2px;
-  }
-  
-  .btn-7:hover {
-    /* color: rgba(251, 75, 2, 1); */
-    background: linear-gradient(250.4deg, rgb(20, 30, 48) 11.2%, rgb(36, 59, 85) 91.1%);
-    /* background: linear-gradient(225deg, rgb(0, 164, 189) 0%, rgb(0, 189, 165) 100%); */
 
-  }
-  
-  
-  .btn-7:hover:before {
-    height: 100%;
-  }
-  
-  .btn-7:hover:after {
-    width: 100%;
-  }
-  
-  .btn-7 span:before,
-  .btn-7 span:after {
-    position: absolute;
-    content: "";
-    left: 0;
-    top: 0;
-    background: rgb(36, 59, 85);
-    box-shadow:
-      -7px -7px 20px 0px rgba(255, 255, 255, .9),
-      -4px -4px 5px 0px rgba(255, 255, 255, .9),
-      7px 7px 20px 0px rgba(0, 0, 0, .2),
-      4px 4px 5px 0px rgba(0, 0, 0, .3);
-    transition: all 0.3s ease;
-  }
-  
-  .btn-7 span:before {
-    width: 2px;
-    height: 0%;
-  }
-  
-  .btn-7 span:after {
-    height: 2px;
-    width: 0%;
-  }
-  
-  .btn-7 span:hover:before {
-    height: 100%;
-  }
-  
-  .btn-7 span:hover:after {
-    width: 100%;
-  }
-  
-  /* 12 */
+.dark .btn-7 {
+  background: linear-gradient(112.1deg, #F7FAFC 11.4%, #EDF2F7 50%, #E2E8F0 70.2%);
+  color: black;
+}
+
+.btn-7 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-7:before,
+.btn-7:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: rgb(63, 76, 119);
+  box-shadow:
+    -7px -7px 20px 0px rgba(255, 255, 255, .9),
+    -4px -4px 5px 0px rgba(255, 255, 255, .9),
+    7px 7px 20px 0px rgba(0, 0, 0, .2),
+    4px 4px 5px 0px rgba(0, 0, 0, .3);
+  transition: all 0.3s ease;
+}
+
+.btn-7:before {
+  height: 0%;
+  width: 2px;
+}
+
+.btn-7:after {
+  width: 0%;
+  height: 2px;
+}
+
+.btn-7:hover {
+  /* color: rgba(251, 75, 2, 1); */
+  background: linear-gradient(250.4deg, rgb(20, 30, 48) 11.2%, rgb(36, 59, 85) 91.1%);
+  /* background: linear-gradient(225deg, rgb(0, 164, 189) 0%, rgb(0, 189, 165) 100%); */
+
+}
+
+.dark .btn-7:hover {
+  background: linear-gradient(250.4deg, #E2E8F0 11.2%, #EDF2F7  91.1%);
+}
+
+
+.btn-7:hover:before {
+  height: 100%;
+}
+
+.btn-7:hover:after {
+  width: 100%;
+}
+
+.btn-7 span:before,
+.btn-7 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: rgb(36, 59, 85);
+  box-shadow:
+    -7px -7px 20px 0px rgba(255, 255, 255, .9),
+    -4px -4px 5px 0px rgba(255, 255, 255, .9),
+    7px 7px 20px 0px rgba(0, 0, 0, .2),
+    4px 4px 5px 0px rgba(0, 0, 0, .3);
+  transition: all 0.3s ease;
+}
+
+.btn-7 span:before {
+  width: 2px;
+  height: 0%;
+}
+
+.btn-7 span:after {
+  height: 2px;
+  width: 0%;
+}
+
+.btn-7 span:hover:before {
+  height: 100%;
+}
+
+.btn-7 span:hover:after {
+  width: 100%;
+}
+
+/* 12 */
 .btn-12 {
   position: relative;
   right: 8px;
@@ -226,7 +247,7 @@
 .btn-12 span {
   background: rgb(0, 172, 238);
   background: linear-gradient(0deg, rgb(0, 164, 189) 0%, rgb(0, 189, 165) 100%);
-    /* background: linear-gradient(0deg, rgba(0, 172, 238, 1) 0%, rgba(2, 126, 251, 1) 100%); */
+  /* background: linear-gradient(0deg, rgba(0, 172, 238, 1) 0%, rgba(2, 126, 251, 1) 100%); */
   display: block;
   position: absolute;
   width: 120px;
@@ -294,6 +315,7 @@
   transform: rotate(45deg);
   transform-origin: 40px 40px;
 }
+
 .lds-heart div {
   top: 20px;
   left: -12px;
@@ -303,6 +325,7 @@
   background: #de3737;
   animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
 }
+
 .lds-heart div:after,
 .lds-heart div:before {
   content: " ";
@@ -312,30 +335,38 @@
   height: 15px;
   background: #de3737;
 }
+
 .lds-heart div:before {
   left: -10px;
   border-radius: 50% 0 0 50%;
 }
+
 .lds-heart div:after {
   top: -10px;
   border-radius: 50% 50% 0 0;
 }
+
 @keyframes lds-heart {
   0% {
     transform: scale(0.95);
   }
+
   5% {
     transform: scale(1.1);
   }
+
   39% {
     transform: scale(0.85);
   }
+
   45% {
     transform: scale(1);
   }
+
   60% {
     transform: scale(0.95);
   }
+
   100% {
     transform: scale(0.9);
   }
@@ -349,6 +380,7 @@
   width: 80px;
   height: 80px;
 }
+
 .lds-facebook div {
   display: inline-block;
   position: absolute;
@@ -357,23 +389,28 @@
   background: radial-gradient(circle at 0.1% 99.8%, rgb(0, 164, 189) 0%, rgb(0, 189, 165) 90%);
   animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
 }
+
 .lds-facebook div:nth-child(1) {
   left: 8px;
   animation-delay: -0.24s;
 }
+
 .lds-facebook div:nth-child(2) {
   left: 32px;
   animation-delay: -0.12s;
 }
+
 .lds-facebook div:nth-child(3) {
   left: 56px;
   animation-delay: 0;
 }
+
 @keyframes lds-facebook {
   0% {
     top: 8px;
     height: 64px;
   }
+
   50%, 100% {
     top: 24px;
     height: 32px;

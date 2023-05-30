@@ -20,7 +20,7 @@ export default function App({ Component, pageProps }) {
     <Head>
       <meta name='viewport' content='width=device=widht, initial-scale-1' />
     </Head>
-    <main className={`${montserrat.variable} ${monsieur_La_Doulaise.variable} font-mont`}>
+    <main className={`${montserrat.variable} ${monsieur_La_Doulaise.variable} bg-light dark:bg-dark font-mont`}>
       <Navbar />
       <Component {...pageProps} />
       <Footer/>

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 const useThemeSwitcher = () => {
     const preferDarkQuery = "(prefer-color-scheme: dark)";
-    const [mode, setMode] = useState("")
+    const [mode, setMode] = useState("dark")
 
     useEffect(() => {
         const mediaQuery = window.matchMedia(preferDarkQuery)
@@ -39,7 +39,7 @@ const useThemeSwitcher = () => {
             window.localStorage.setItem("theme", "light")
             document.documentElement.classList.remove("dark")
         }
-    })
+    }, [mode])
 
     return [mode, setMode]
 }

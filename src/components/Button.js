@@ -1,11 +1,12 @@
 import React from "react";
-import styles from "../styles/button.module.css"
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
 const Buttons = (props) => {
     if (props.href) {
         return (
-            <div className={styles.frame}>
+            <div className={"frame"}>
                 <a href={props.href} className={"custom-btn btn-3"}>
                     <span>{props.title}</span>
                 </a>
@@ -14,7 +15,7 @@ const Buttons = (props) => {
     }
     if (props.to) {
         return (
-            <div className={styles.frame}>
+            <div className={"frame"}>
                 <Link href={props.to} className={"custom-btn btn-3"}>
                     <span>{props.title}</span>
                 </Link>
@@ -22,7 +23,7 @@ const Buttons = (props) => {
         );
     }
     return (
-        <div className={styles.frame}>
+        <div className={"frame"}>
             <button
                 type={props.type}
                 onClick={props.onClick}
@@ -39,8 +40,9 @@ export const Buttons7 = (props) => {
     if (props.href) {
         return (
             <div className={"frame"}>
-                <Link href={props.href} className={"custom-btn btn-7"} target="_blank">
-                    <span>{props.title}</span>
+                <Link href={props.href} className={"custom-btn btn-7 "} target="_blank">
+                    <span>{props.title}&nbsp; <FontAwesomeIcon icon={faUpRightFromSquare} /></span>
+
                 </Link>
             </div>
         );

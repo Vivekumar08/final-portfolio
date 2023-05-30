@@ -11,11 +11,12 @@
     -o-transform: translate(-270px, 0);
     transform: translate(-270px, 0);
   }
+
+  
   .social ul li {
     display: block;
     margin: 5px;
-    background: linear-gradient(250.4deg, rgb(20, 30, 48) 11.2%, rgb(36, 59, 85) 91.1%);
-
+    /* background: linear-gradient(250.4deg, rgb(20, 30, 48) 11.2%, rgb(36, 59, 85) 91.1%); */
     /* background: rgba(0, 0, 0, 0.36); */
     width: 300px;
     text-align: right;
@@ -29,6 +30,9 @@
     -o-transition: all ease-in-out 1s;
     transition: all ease-in-out 1s;
   }
+  .darktheme{
+    /* background: linear-gradient(250.4deg, rgb(215, 205, 207) 11.2%, rgb(189, 176, 171) 91.1%); */
+  } 
   .social ul li:hover {
     -webkit-transform: translate(110px, 0);
     -moz-transform: translate(110px, 0);

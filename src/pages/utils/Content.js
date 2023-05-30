@@ -1,9 +1,10 @@
 const introdata = {
     animated: {
-        first: "into coding",
-        second: "a software Developer",
-        third: "a Full Stack Developer",
-        fourth: "into Programming",
+        first: "Programmer",
+        second: "Software Developer",
+        third: "Full Stack Developer",
+        fourth: "Data Scientist",
+        fourth: "Data Analyst",
     },
 };
 export {introdata};
