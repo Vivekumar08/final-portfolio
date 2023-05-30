@@ -33,10 +33,11 @@ export default function Home() {
                   <TypewriterComponent
                     options={{
                       strings: [
-                        introdata.animated.first,
-                        introdata.animated.third,
-                        introdata.animated.second,
-                        introdata.animated.fourth,
+                        "Programmer",
+                        "Software Developer",
+                        "Full Stack Developer",
+                        "Data Scientist",
+                        "Data Analyst",
                       ],
                       autoStart: true,
                       loop: true,
