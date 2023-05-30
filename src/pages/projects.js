@@ -188,7 +188,7 @@ const Projects = () => {
                   "ExpressJs",
                 ]}
                 img={qaa}
-                github={"https://github.com/Vivekumar08/"}
+                github={"https://github.com/Vivekumar08/Quick-Access-App"}
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
@@ -226,7 +226,7 @@ const Projects = () => {
                   "ExpressJs",
                 ]}
                 img={drc}
-                github={"https://github.com/Vivekumar08/"}
+                github={"https://drc-du.netlify.app/"}
               />
             </div>
 
@@ -245,7 +245,7 @@ const Projects = () => {
                   "Framer Motion",
                 ]}
                 img={conference}
-                github={"https://github.com/Vivekumar08/"}
+                github={"https://github.com/Vivekumar08/cic-conference"}
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
@@ -268,7 +268,7 @@ const Projects = () => {
                   "Feature Extraction",
                 ]}
                 img={ai_img}
-                github={"https://github.com/Vivekumar08/"}
+                github={"https://github.com/Vivekumar08/CNN_KNN"}
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
@@ -290,7 +290,7 @@ const Projects = () => {
                 }
                 tech={["HTML", "CSS", "JQuery", "JavaScript", "Bootstrap"]}
                 img={simulator}
-                github={"https://github.com/Vivekumar08/"}
+                github={"https://github.com/Vivekumar08/SimulatorX"}
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
@@ -301,7 +301,7 @@ const Projects = () => {
                 }
                 tech={["HTML", "CSS", "Bootstrap", "JavaScript", "JQuery"]}
                 img={tictactoe}
-                github={"https://github.com/Vivekumar08/"}
+                github={"https://github.com/Vivekumar08/Tic_Tac_Toe"}
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
@@ -314,7 +314,7 @@ const Projects = () => {
                   "Python","Matplotlib","OpenGL","numpy","pandas","GUI",
                 ]}
                 img={cg}
-                github={"https://github.com/Vivekumar08/"}
+                github={"https://github.com/Vivekumar08/Computer_Graphics_using_python"}
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
@@ -330,7 +330,7 @@ const Projects = () => {
                   "Pandas",
                 ]}
                 img={quiz}
-                github={"https://github.com/Vivekumar08/"}
+                github={"https://github.com/Vivekumar08/Quizstar"}
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
@@ -346,7 +346,7 @@ const Projects = () => {
                   "GUI",
                 ]}
                 img={url_shortner}
-                github={"https://github.com/Vivekumar08/"}
+                github={"https://github.com/Vivekumar08/Url-shortner"}
               />
             </div>
           </div>
