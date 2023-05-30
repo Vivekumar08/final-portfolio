@@ -51,7 +51,7 @@ const About = () => {
             <div className="w-full mx-auto py-2 mb-6 sm:mb-4 flex flex-col items-center justify-center text-center overflow-hidden">
               <motion.h1
                 variants={textVariant(1.1)}
-                className={`${styles.heroHeading} inline-block text-dark dark:text-light lg:!text-5xl sm:!text-4xl xs:!text-3xl font-bold capitalize text-6xl`}
+                className={`${styles.heroHeading} inline-block text-dark dark:text-light lg:!text-5xl sm:!text-4xl xs:!text-3xl font-bold capitalize text-6xl mb-4`}
               >
                 Having a strong drive
               </motion.h1>

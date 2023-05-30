@@ -7,56 +7,56 @@ import useThemeSwitcher from "@/hooks/useThemeSwitcher";
 import { MoonIcon, SunIcon } from "./Icons";
 import SocialLinks from "./SocialLinks";
 
-const CustomLink = ({ href, title, className = "" }) => {
-  const router = useRouter();
-  return (
-    <Link href={href} className={`${className} relative group ${router.asPath == href
-        ? "text-dark dark:text-light"
-        : "text-slate-600 "
-      }`}>
-      <span>
-        {title}
-      </span>
-      <span
-        className={`h-[1px] inline-block bg-black dark:bg-light absolute left-1/4 -bottom-0.5 group-hover:w-1/2 transition-[width] ease duration-300 ${router.asPath == href ? "w-1/2" : "w-0"
-          }`}
-      >
-        &nbsp;
-      </span>
-    </Link>
-  );
-};
-const CustomMobileLink = ({ href, title, className = "", toggle }) => {
-  const router = useRouter();
-  toggle();
-  const handleClick = () => {
-    router.push(href);
-  };
-  return (
-    <Link
-      href={href}
-      className={`${className} relative group  ${router.asPath == href
-          ? "text-light lg:text-light dark:lg:text-dark"
-          : "text-slate-600 "
-        }`}
-      onClick={handleClick}
-    >
-      <span>{title}</span>
-      <span
-        className={`h-[1px] inline-block bg-black lg:bg-light dark:bg-light dark:lg:bg-dark absolute left-1/4 -bottom-0.5 group-hover:w-1/2 transition-[width] ease duration-300 ${router.asPath == href ? "w-1/2" : "w-0"
-          }`}
-      >
-        &nbsp;
-      </span>
-    </Link>
-  );
-};
 const Navbar = () => {
   const [mode, setMode] = useThemeSwitcher();
   const [isOpen, setIsOpen] = useState(false);
+  const CustomLink = ({ href, title, className = "" }) => {
+    const router = useRouter();
+    return (
+      <Link href={href} className={`${className} relative group ${router.asPath == href
+        ? "text-dark dark:text-light"
+        : "text-slate-600 "
+        }`}>
+        <span>
+          {title}
+        </span>
+        <span
+          className={`h-[1px] inline-block bg-black dark:bg-light absolute left-1/4 -bottom-0.5 group-hover:w-1/2 transition-[width] ease duration-300 ${router.asPath == href ? "w-1/2" : "w-0"
+            }`}
+        >
+          &nbsp;
+        </span>
+      </Link>
+    );
+  };
+  const CustomMobileLink = ({ href, title, className = "" }) => {
+    const router = useRouter();
+    const handleClick1 = () => {
+      setIsOpen(!isOpen);
+      router.push(href);
+    };
+    return (
+      <Link
+        href={href}
+        className={`${className} relative group  ${router.asPath == href
+          ? "text-light lg:text-light dark:lg:text-dark"
+          : "text-slate-600 "
+          }`}
+        onClick={handleClick1}
+      >
+        <span>{title}</span>
+        <span
+          className={`h-[1px] inline-block bg-black lg:bg-light dark:bg-light dark:lg:bg-dark absolute left-1/4 -bottom-0.5 group-hover:w-1/2 transition-[width] ease duration-300 ${router.asPath == href ? "w-1/2" : "w-0"
+            }`}
+        >
+          &nbsp;
+        </span>
+      </Link>
+    );
+  };
 
   const handleClick = () => {
-    setIsOpen((prev) => !prev);
+    setIsOpen(!isOpen);
   };
 
   return (
@@ -107,38 +107,34 @@ const Navbar = () => {
           <motion.nav
             initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
             animate={{ scale: 1, opacity: 1 }}
-            className={`min-w-[70vw] hidden lg:flex flex-col items-center  justify-between  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-            bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32 text-light dark:text-light gap-3 ${isOpen ? "z-50" : "lg:hidden hidden"}`}
+            className={`min-w-[70vw] flex flex-col z-30 items-center  justify-between  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+            bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32 text-light dark:text-light gap-3 `}
+            onClick={handleClick}
           >
             <CustomMobileLink
               href={"/"}
               title={"Home"}
               className=""
-              toggle={handleClick}
             />
             <CustomMobileLink
               href={"/about"}
               title={"About"}
               className=""
-              toggle={handleClick}
             />
             <CustomMobileLink
               href={"/experience"}
               title={"Experience"}
               className=""
-              toggle={handleClick}
             />
             <CustomMobileLink
               href={"/projects"}
               title={"projects"}
               className=""
-              toggle={handleClick}
             />
             <CustomMobileLink
               href={"/contact"}
               title={"Contact"}
               className=""
-              toggle={handleClick}
             />
             <button
               onClick={() => setMode(mode === "light" ? "dark" : "light")}

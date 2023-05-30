@@ -39,7 +39,7 @@ const Buttons = (props) => {
 export const Buttons7 = (props) => {
     if (props.href) {
         return (
-            <div className={"frame "}>
+            <div className={"frame w-full"}>
                 <Link href={props.href} className={"custom-btn btn-7 flex items-center gap-2 mx-2"} target="_blank">
                     <span >{props.title} </span>
                     <FontAwesomeIcon icon={faUpRightFromSquare} className="w-[18px] h-[18px] mx-2"/>
@@ -49,7 +49,7 @@ export const Buttons7 = (props) => {
     }
     if (props.to) {
         return (
-            <div className={"frame"}>
+            <div className={"frame w-full"}>
                 <Link href={props.to} className={"custom-btn btn-7"}>
                     <span>{props.title}</span>
                 </Link>
