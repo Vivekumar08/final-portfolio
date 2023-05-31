@@ -52,7 +52,7 @@ export default function Home() {
                   skills.
                 </p>
                 <div className='flex xl:w-full items-center self-start gap-12 p-4 w-[75%] pb-5 mt-2 '>
-                  <Buttons7 title={"Resume"} href="/Assets/Rezume.pdf" />
+                  <Buttons7 title={"Resume"} href="/Assets/Resume.pdf" />
                   <Buttons7 title={"Contact"} to="/contact" />
                 </div>
               </motion.div>
